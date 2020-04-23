@@ -32,7 +32,7 @@ spec:
     tty: true
 
   - name: helm
-    image: us.gcr.io/pro1-265115/helm3
+    image: us.gcr.io/sequislife-pilot/helm3
     command:
     - cat
     tty: true
