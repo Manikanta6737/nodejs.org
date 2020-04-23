@@ -40,6 +40,7 @@ spec:
 """
 }
   }
+  tools {nodejs "nodejs"}
     stages {    
     stage('Install dependencies') {
       steps {
