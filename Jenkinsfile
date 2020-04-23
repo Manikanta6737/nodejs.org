@@ -1,12 +1,12 @@
 pipeline {
 
   environment {
-    PROJECT = "pro1-265115"
-    APP_NAME = "nodejs"
+    PROJECT = "sequislife-pilot"
+    APP_NAME = "node"
     FE_SVC_NAME = "${APP_NAME}"
     CLUSTER = "jenkins"
     CLUSTER_ZONE = "us-central1-c"
-    IMAGE_TAG = "gcr.io/${PROJECT}/${APP_NAME}:latest"
+    IMAGE_TAG = "us.gcr.io/${PROJECT}/${APP_NAME}:latest"
     JENKINS_CRED = "${PROJECT}"
   
   }
@@ -26,7 +26,7 @@ spec:
   
   containers:
   - name: node
-    image: us.gcr.io/pro1-265115/nodejs
+    image: us.gcr.io/sequislife-pilot/nodejs
     command:
     - cat
     tty: true
