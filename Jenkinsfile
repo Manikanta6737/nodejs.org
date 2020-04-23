@@ -47,6 +47,10 @@ spec:
         sh 'npm install'
       }
     }
-  }
-}   
-  
+    stage('Build') {
+      steps {
+         sh 'ng build --prod'
+      }
+    }    
+  }   
+} 
