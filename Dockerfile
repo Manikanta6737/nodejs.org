@@ -1,4 +1,4 @@
-FROM us.gcr.io/sequislife-pilot/nodejs
+FROM us.gcr.io/pro1-265115/nodejs
 VOLUME /tmp
 EXPOSE 9090 
 RUN npm install
